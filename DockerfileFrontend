@@ -1,0 +1,4 @@
+FROM nginx:mainline
+COPY ./marklog-frontend/dist /usr/share/nginx/html
+ADD default.conf /etc/nginx/conf.d/
+CMD ["nginx", "-g", "daemon off;"]
