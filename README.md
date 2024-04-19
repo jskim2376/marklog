@@ -1,79 +1,102 @@
-# 마크다운 지원 블로그 MARKLOG
+# 마크 다운 지원 블로그 Marklog
 
-<img src="https://github.com/padomay1352/marklog/assets/19688616/c4528b66-3f2c-4ae0-96ea-6e83a0be5d1a" width="1024">
+![](https://i.imgur.com/daj4dGK.jpeg)
 
-## 프로젝트 소개
+## 개요
 
-- Marklog는 블로그 서비스로 Markdown을 지원하는 블로그입니다.
-- social login을 통해 회원가입을 하고 다양한 글을 등록할 수 있습니다.
-- 원하는 태그, 제목, 본문을 검색해 여러 글들을 탐색 할 수 있습니다.
-- 마음에 드는 게시글에 좋아요를 누르거나 댓글을 작성할 수 있습니다.
+| 소개      | Marklog은 마크다운을 지원하는 간편한 블로그 플랫폼입니다. |
+| --------- | --------------------------------------------------------- |
+| 개발 기간 | 2023.03 - 2023.06                                         |
+| 플랫폼    | Web                                                       |
+| 개발 인원 | 1명(개인 프로젝트)                                        |
+| GitHub    | https://github.com/jskim2376/marklog                      |
 
-## 시작하기
+## 사용 기술
 
-1. Clone repo
+| TypeScript, lit-html, Bootstrap | Frontend page 개발을 위해 사용했습니다.      |
+| ------------------------------- | -------------------------------------------- |
+| Java 8, Spring Boot             | Backend API 개발을 위해 사용했습니다.        |
+| MySQL, JPA, QueryDSL            | 데이터 저장 및 Java ORM을 위해 사용했습니다. |
+| Jenkins, Git, GitHub            | CI/CD를 위해 사용했습니다.                   |
+| AWS, Docker, Nginx              | 서버를 배포하기 위해 사용했습니다.           |
 
-```consol
-git clone https://github.com/padomay1352/marklog.git
-```
+## 프로젝트 구조
 
-2. run app
-
-```consol
-docker compose up
-```
-
-## 기술 스택
-
-### Language & Framework
-
-| Java | SpringBoot | JPA | JavaScript | TypeScript |
-| --- | --- | --- | --- | --- |
-| <img src="https://raw.githubusercontent.com/jmnote/z-icons/master/svg/java.svg" width="64"> | <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" width="64"> | <img src="https://github.com/padomay1352/marklog/assets/19688616/b2184cf3-3588-4975-b96b-6bc0bcd37841" width="64"> | <img src="https://github.com/padomay1352/marklog/assets/19688616/91be41e4-5e2d-402a-bd1f-822f7c1e8fb9"> | <img src="https://github.com/padomay1352/marklog/assets/19688616/ff39d084-909e-450f-829a-d8009e62fc5c"> |
-
-### DevOps
-
-| aws | nginx | docker | jenkins | github |
-| --- | --- | --- | --- | --- |
-| <img src="https://github.com/padomay1352/marklog/assets/19688616/8bbdcfe9-f093-489d-954c-587740c5aaea" width="64"> | <img src="https://github.com/padomay1352/marklog/assets/19688616/a96f5881-cdb4-4409-9b67-1f2c132ecd96" width="64"> | <img src="https://github.com/padomay1352/marklog/assets/19688616/85db1d09-d22d-4ebd-bfde-0fcdb48d8231" width="64"> | <img src="https://github.com/padomay1352/marklog/assets/19688616/6fb4ca5d-ae01-4422-8977-47f9b4035e29" width="64"> | <img src="https://github.com/padomay1352/marklog/assets/19688616/75807a34-e3f2-40d0-b768-72dfaaba91f2" width="64"> |
-
-### Tools
-
-| Figma | Google Slide |
-| --- | --- |
-| <img src="https://github.com/padomay1352/marklog/assets/19688616/ff4c8d69-2d16-4da3-9041-a1987ba78fd9" width="64"> | <img src="https://github.com/padomay1352/marklog/assets/19688616/05a94f36-cc7a-4757-ad13-1cc218661b1e" height="64"> |
-
-# 기획
+![](https://i.imgur.com/MPTqh0R.jpeg)
 
 ## IA
 
-[IA](https://www.figma.com/file/cWF2H8crAdWf1Yp5naJ4F0/marklog-task-flow-chart?type=whiteboard&node-id=0%3A1&t=YWJvTzoz8Wnc1QmA-1)
+![marklog IA](https://i.imgur.com/1y4fpRV.jpeg)
 
-<img width="9056" alt="marklog IA" src="https://github.com/padomay1352/marklog/assets/19688616/63411bd2-a579-4ef1-beef-86b67ee7d370">
+## 와이어 프레임
 
-## Wireframe
+![marklog wire frame](https://i.imgur.com/BIrVkte.png)
 
-[Figma](https://www.figma.com/file/1rA8RYUvnwoo0JodcDA0Y6/Marklog-Wire-Frame?type=design&node-id=0%3A1&mode=design&t=ubbp4B2sbCpUfSuX-1)
+## ERD
 
-![header](https://github.com/padomay1352/marklog/assets/19688616/2a4ff18b-166a-43d5-8459-ad794fceb2b9) ![footer](https://github.com/padomay1352/marklog/assets/19688616/395dd9d4-0089-4b2c-9853-45446122812b) ![page](https://github.com/padomay1352/marklog/assets/19688616/4b142275-bfa2-4308-acea-80dac9bd7a64)
+![marklog erd](https://i.imgur.com/dfvheQW.png)
 
-## API Document
+## API
 
-[API List](https://unmarred-popcorn-664.notion.site/519115b73fa2462d9fb3ff08d5568617?v=41a4c4b0073646d6a9c4ffdb7ae7d6a90) |Name|Select| |---|---| |/post|GET| |/post|POST| |/post/{id}|GET| |/post/{id}|PUT| |/post/{id}|DELETE| |/post/{id}/like|POST| |/post/{id}/like|DELETE| |/post/{id}/comment|GET| |/post/{id}/comment|POST| |/post/{id}/comment/{commentId}|GET| |/post/{id}/comment/{commentId}|PUT| |/post/{id}/comment/{commentId}|DELETE| |/search|GET| |/search/user|GET| |/search/tag|GET| |/token/check|GET| |/token/refresh|GET| |/user/logout|GET| |/user/{id}|GET| |/user/{id}|PUT| |/user/{id}|DELETE| |/user/{id}/notice|GET| |/user/{id}/notice|DELETE|
+| Name                           | Method | 설명                                            |
+| ------------------------------ | ------ | ----------------------------------------------- |
+| /post                          | GET    | 최신 게시글 개요를 페이지 단위로 조회합니다.    |
+| /post                          | POST   | 게시글을 생성합니다.                            |
+| /post/{id}                     | GET    | 좋아요 포함해 게시글을 조회합니다.              |
+| /post/{id}                     | PUT    | 관리자 또는 작성자가 게시글을 수정합니다.       |
+| /post/{id}                     | DELETE | 관리자 또는 작성자가 게시글을 삭제합니다.       |
+| /post/{id}/like                | POST   | 게시글에 좋아요 생성합니다.                     |
+| /post/{id}/like                | DELETE | 게시글에 좋아요 삭제합니다.                     |
+| /post/{id}/comment             | GET    | 게시글의 댓글에 생성합니다.                     |
+| /post/{id}/comment             | POST   | 게시글에 댓글을 삭제합니다.                     |
+| /post/{id}/comment/{commentId} | GET    | 게시글에 댓글에 답글을 생성합니다.              |
+| /post/{id}/comment/{commentId} | DELETE | 게시글의 댓글에 답글을 삭제합니다.              |
+| /search                        | GET    | 제목과 내용으로 게시글을 검색합니다.            |
+| /search/user                   | GET    | 사용자의 게시글을 검색합니다.                   |
+| /search/tag                    | GET    | 태그로 게시글을 검색합니다.                     |
+| /token/check                   | GET    | JWT 인증이 올바른지 확인합니다.                 |
+| /token/refresh                 | GET    | refresh token으로 새 access_token을 발급합니다. |
+| /user/logout                   | GET    | JWT Cookie을 삭제해 로그아웃 합니다.            |
+| /user/{id}                     | GET    | 유저를 조회합니다.                              |
+| /user/{id}                     | PUT    | 유저 정보를 수정합니다.                         |
+| /user/{id}                     | DELETE | 유저를 삭제합니다.                              |
+| /user/{id}/notice              | GET    | 알림을 받아옵니다.                              |
+| /user/{id}/notice              | DELETE | 알림을 삭제합니다.                              |
 
-# 기능
+## 페이지 목록
 
-    - 유저
-        - 로그인(Google SSO), 로그아웃
-        - 회원가입, 탈퇴
-        - 유저 정보 조회/수정
-        - 댓글/답글 알림
-    - 게시글
-        - 게시글 조회/등록/수정/삭제
-        - 게시글 내용/제목/태그 검색
-        - 좋아요
-        - 댓글
-            - 댓글 등록/삭제
-            - 답글 등록/삭제
-    - 블로그
-        - 작성글 조회
+### home / blog
+
+- 최신 게시글 목록의 썸네일을 확인 할 수 있습니다.
+- 사용자의 블로그를 확인 할 수 있습니다.
+
+| home                                             | blog                                     |
+| ------------------------------------------------ | ---------------------------------------- |
+| ![marklog blog](https://i.imgur.com/jcTivKA.png) | ![](https://i.imgur.com/K6oeCBW.png)<br> |
+
+### search / tag
+
+- 제목, 내용, 태그를 기반으로 한 상세 검색 기능을 개발하여 사용자가 쉽게 원하는 콘텐츠를 찾을 수 있습니다.
+
+| home                                            | tag                                  |
+| ----------------------------------------------- | ------------------------------------ |
+| ![marklog tag](https://i.imgur.com/1B0FJ76.png) | ![](https://i.imgur.com/hBAyZUi.png) |
+
+### post & delete / write & edit
+
+- 게시글을 조회 및 삭제를 할 수 있습니다.
+- 게시글에 좋아요와 댓글과 답글을 작성할 수 있습니다.
+- 게시글을 작성하고 수정 할 수 있습니다.
+
+| post & delete                            | write & edit                                           |
+| ---------------------------------------- | ------------------------------------------------------ |
+| ![](https://i.imgur.com/byMUZ0q.png)<br> | ![](https://i.ibb.co/MZ8XXdq/localhost-8080-write.png) |
+
+### login & setting
+
+- google SSO로 로그인 및 회원가입을 할 수 있습니다.
+- 사용자의 이미지, 이름, 소개, 블로그 이름, 회원탈퇴를 할 수 있습니다.
+
+| login                                                  | setting                                                  |
+| ------------------------------------------------------ | -------------------------------------------------------- |
+| ![](https://i.ibb.co/4S2rbSg/localhost-8080-login.png) | ![](https://i.ibb.co/hDghwwr/localhost-8080-setting.png) |
