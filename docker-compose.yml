@@ -1,12 +1,12 @@
 version: "3"
 services:
-    marklog_backend_container:
-        image: padomay1352/marklog-backend
-        restart: always
-    marklog_frontend_container:
-        image: padomay1352/marklog-frontend
-        ports:
-            - 8080:8080
-        restart: always
-        depends_on:
-            - marklog_backend_container
+  marklog_backend_container:
+    image: jskim2376/marklog:backend
+    restart: always
+  marklog_frontend_container:
+    image: jskim2376/marklog:frontend
+    ports:
+      - 8080:8080
+    restart: always
+    depends_on:
+      - marklog_backend_container

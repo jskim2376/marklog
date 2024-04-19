@@ -1,6 +1,4 @@
 FROM adoptopenjdk/openjdk11:ubi
-LABEL email=padomay1352@gmail.com
-LABEL name=김준수
 COPY ./marklog-backend /app
 WORKDIR /app
 RUN chmod +x gradlew
